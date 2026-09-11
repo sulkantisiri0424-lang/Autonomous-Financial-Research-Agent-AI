@@ -1,0 +1,6 @@
+company,symbol,sector,industry,current_price,market_cap,pe_ratio,52_week_high,52_week_low
+Apple Inc.,AAPL,Technology,Consumer Electronics,230.00,3500000000000,34.50,260.00,164.00
+Microsoft Corporation,MSFT,Technology,Software,500.00,3700000000000,37.20,555.00,344.00
+Amazon.com Inc.,AMZN,Consumer Cyclical,Internet Retail,230.00,2450000000000,36.80,258.60,151.60
+Alphabet Inc.,GOOGL,Communication Services,Internet Content,230.00,2800000000000,29.50,214.00,142.00
+Tesla Inc.,TSLA,Consumer Cyclical,Auto Manufacturers,350.00,1100000000000,180.00,488.50,182.00
