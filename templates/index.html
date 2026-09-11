@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Autonomous Financial Research Agent</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <header>
+        <h1>Autonomous Financial Research Agent</h1>
+        <p>AI-powered financial research, analysis and risk assessment</p>
+    </header>
+
+    <main>
+
+        <section class="search-box">
+
+            <h2>Financial Research</h2>
+
+            <p>
+                Enter a stock symbol to start autonomous financial research.
+            </p>
+
+            <input
+                type="text"
+                id="company"
+                placeholder="Example: AAPL"
+            >
+
+            <button onclick="startResearch()">
+                Start Research
+            </button>
+
+            <p id="status"></p>
+
+        </section>
+
+
+        <section id="results" class="results">
+
+            <div class="card">
+
+                <h2>Company Information</h2>
+
+                <p><strong>Company:</strong>
+                    <span id="companyName">-</span>
+                </p>
+
+                <p><strong>Symbol:</strong>
+                    <span id="symbol">-</span>
+                </p>
+
+                <p><strong>Sector:</strong>
+                    <span id="sector">-</span>
+                </p>
+
+                <p><strong>Industry:</strong>
+                    <span id="industry">-</span>
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h2>Financial Analysis</h2>
+
+                <p>
+                    <strong>Valuation:</strong>
+                    <span id="valuation">-</span>
+                </p>
+
+                <p>
+                    <strong>Price:</strong>
+                    <span id="price">-</span>
+                </p>
+
+                <p>
+                    <strong>Market Size:</strong>
+                    <span id="marketSize">-</span>
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h2>Risk Assessment</h2>
+
+                <p>
+                    <strong>Risk Level:</strong>
+                    <span id="riskLevel">-</span>
+                </p>
+
+                <p>
+                    <strong>Risk Factors:</strong>
+                </p>
+
+                <ul id="riskFactors">
+                    <li>-</li>
+                </ul>
+
+                <p>
+                    <strong>Recommendation:</strong>
+                    <span id="recommendation">-</span>
+                </p>
+
+            </div>
+
+
+            <div class="card report">
+
+                <h2>Final Research Report</h2>
+
+                <p>
+                    <strong>Summary:</strong>
+                </p>
+
+                <p id="summary">
+                    -
+                </p>
+
+                <p>
+                    <strong>Conclusion:</strong>
+                </p>
+
+                <p id="conclusion">
+                    -
+                </p>
+
+                <p class="disclaimer" id="disclaimer">
+                    -
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>
+            Autonomous Financial Research Agent AI
+        </p>
+    </footer>
+
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
